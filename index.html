@@ -1,68 +1,244 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>agmelendez — Profile</title>
+  <title>agmelendez — Portafolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
-        <img class="avatar" src="https://github.com/agmelendez.png" alt="avatar" />
-        <div>
+        <img class="avatar" src="https://github.com/agmelendez.png" alt="Foto de agmelendez" />
+        <div class="brand-copy">
           <h1 id="name">agmelendez</h1>
-          <p id="title">Software Developer • Open to collaborations</p>
+          <p id="title">Frontend &amp; Product Designer</p>
         </div>
       </div>
+
+      <nav class="site-nav" aria-label="Secciones principales">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
       <div class="actions">
-        <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+        <button id="themeToggle" aria-label="Cambiar tema">🌙</button>
       </div>
     </div>
   </header>
 
-  <main class="container">
-    <section class="card about">
-      <h2>About</h2>
-      <p id="bio">Hello — I'm agmelendez. This is a simple profile page you can edit to show your bio, skills, projects and contact information.</p>
-      <p>
-        Quick actions:
-        <button id="copyEmail">Copy email</button>
-        <a id="downloadCv" href="#" download="CV-agmelendez.txt">Download CV</a>
-      </p>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <span class="hero-eyebrow">Creando productos digitales significativos</span>
+          <h2 class="hero-title">Transformo ideas en experiencias memorables para las personas usuarias.</h2>
+          <p class="hero-description">Colaboro con startups y equipos de producto para descubrir oportunidades, diseñar interfaces accesibles y desarrollar frontends robustos listos para escalar.</p>
+
+          <div class="hero-highlights" role="list">
+            <article class="highlight" role="listitem">
+              <h3>De discovery a ejecución</h3>
+              <p>Trabajo desde la investigación hasta el handoff de código optimizado y documentado.</p>
+            </article>
+            <article class="highlight" role="listitem">
+              <h3>Diseño centrado en datos</h3>
+              <p>Experimentos y analítica para validar hipótesis y mejorar la conversión.</p>
+            </article>
+          </div>
+
+          <div class="hero-cta">
+            <a class="btn primary" href="#contacto">Agenda una llamada</a>
+            <button id="copyEmail" class="btn secondary" type="button">Copiar correo</button>
+            <a class="btn ghost" href="https://github.com/agmelendez" target="_blank" rel="noopener">Ver GitHub</a>
+          </div>
+        </div>
+
+        <aside class="hero-showcase" aria-label="Resumen profesional">
+          <article class="showcase-card">
+            <h3>Actualmente</h3>
+            <p>Apoyando a equipos remotos en la creación de interfaces escalables y accesibles.</p>
+            <ul>
+              <li>Diseño de sistemas de componentes</li>
+              <li>Auditorías de usabilidad</li>
+              <li>Frontends de alto rendimiento</li>
+            </ul>
+            <a class="showcase-link" href="#proyectos">Explorar proyectos →</a>
+          </article>
+
+          <div class="hero-metrics">
+            <div class="metric">
+              <span class="metric-number">12<span>+</span></span>
+              <span class="metric-label">Productos lanzados</span>
+            </div>
+            <div class="metric">
+              <span class="metric-number">4.9</span>
+              <span class="metric-label">Satisfacción promedio</span>
+            </div>
+            <div class="metric">
+              <span class="metric-number">3</span>
+              <span class="metric-label">Equipos liderados</span>
+            </div>
+          </div>
+        </aside>
+      </div>
     </section>
 
-    <section class="grid">
-      <div class="card">
-        <h3>Skills</h3>
-        <ul id="skills">
-          <li>JavaScript / HTML / CSS</li>
-          <li>React / Node.js</li>
-          <li>APIs & Integrations</li>
-        </ul>
-      </div>
+    <section class="section" id="sobre-mi">
+      <div class="container section-inner">
+        <article class="card about">
+          <h2>Sobre mí</h2>
+          <p id="bio">Hola, soy agmelendez. Me entusiasma resolver problemas complejos con experiencias digitales claras y humanas. Creo en la colaboración multidisciplinaria, la documentación viva y el aprendizaje continuo.</p>
+          <div class="pill-group" role="list">
+            <span class="pill" role="listitem">Design systems</span>
+            <span class="pill" role="listitem">Product discovery</span>
+            <span class="pill" role="listitem">UI accesible</span>
+            <span class="pill" role="listitem">Mentoría</span>
+          </div>
+        </article>
 
-      <div class="card">
-        <h3>Projects</h3>
-        <ul id="projects">
-          <li><a href="#" target="_blank" rel="noopener">Project One — short description</a></li>
-          <li><a href="#" target="_blank" rel="noopener">Project Two — short description</a></li>
-        </ul>
+        <article class="card services">
+          <h2>Cómo puedo ayudar</h2>
+          <ul class="services-list">
+            <li>
+              <h3>Refresco de producto</h3>
+              <p>Auditoría integral y rediseño visual alineado a métricas de negocio.</p>
+            </li>
+            <li>
+              <h3>Implantación de design system</h3>
+              <p>Componentes consistentes, documentación y gobernanza compartida.</p>
+            </li>
+            <li>
+              <h3>Desarrollo frontend end-to-end</h3>
+              <p>Implementación de interfaces accesibles y optimizadas para rendimiento.</p>
+            </li>
+          </ul>
+        </article>
       </div>
     </section>
 
-    <section class="card contact">
-      <h3>Contact</h3>
-      <p>Email: <a id="emailLink" href="mailto:your.email@example.com">your.email@example.com</a></p>
-      <p>GitHub: <a href="https://github.com/agmelendez" target="_blank" rel="noopener">github.com/agmelendez</a></p>
-      <p>Twitter: <a href="#" target="_blank" rel="noopener">@yourhandle</a></p>
+    <section class="section" id="proyectos" aria-labelledby="proyectos-title">
+      <div class="container section-inner">
+        <div class="section-heading">
+          <h2 id="proyectos-title">Proyectos destacados</h2>
+          <p>Una selección de colaboraciones recientes enfocadas en crecimiento, escalabilidad y experiencia de usuario.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="project-year">2024</span>
+              <span class="project-role">Lead Frontend</span>
+            </div>
+            <h3>Onboarding fintech</h3>
+            <p>Simplifiqué el onboarding con validaciones instantáneas y flujos personalizados que redujeron el tiempo de registro un 45%.</p>
+            <a href="#" class="project-link">Ver estudio de caso</a>
+          </article>
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="project-year">2023</span>
+              <span class="project-role">Product Designer</span>
+            </div>
+            <h3>Marketplace creativo</h3>
+            <p>Rediseño del catálogo con navegación facetada y storytelling visual que duplicó la tasa de conversión.</p>
+            <a href="#" class="project-link">Ver estudio de caso</a>
+          </article>
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="project-year">2022</span>
+              <span class="project-role">UX Research</span>
+            </div>
+            <h3>Plataforma educativa</h3>
+            <p>Investigación con estudiantes y docentes para iterar dashboards y lograr un NPS de 68.</p>
+            <a href="#" class="project-link">Ver estudio de caso</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experiencia" aria-labelledby="experiencia-title">
+      <div class="container section-inner">
+        <div class="section-heading">
+          <h2 id="experiencia-title">Experiencia reciente</h2>
+          <p>Una mirada a los hitos más relevantes de los últimos años.</p>
+        </div>
+        <ol class="timeline" role="list">
+          <li class="timeline-item" role="listitem">
+            <div class="timeline-date">2024</div>
+            <div class="timeline-content">
+              <h3>Escalamiento de plataforma SaaS</h3>
+              <p>Coordiné el roadmap de diseño con ingeniería para lanzar un sistema de componentes multiplataforma.</p>
+            </div>
+          </li>
+          <li class="timeline-item" role="listitem">
+            <div class="timeline-date">2023</div>
+            <div class="timeline-content">
+              <h3>Optimización de funnel de conversión</h3>
+              <p>Implementé experimentos A/B y microinteracciones que incrementaron el revenue mensual en 23%.</p>
+            </div>
+          </li>
+          <li class="timeline-item" role="listitem">
+            <div class="timeline-date">2022</div>
+            <div class="timeline-content">
+              <h3>Mentoría de equipos</h3>
+              <p>Diseñé un programa de capacitación interna sobre accesibilidad web y buenas prácticas de frontend.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section testimonials" aria-labelledby="testimonios-title">
+      <div class="container section-inner">
+        <div class="section-heading">
+          <h2 id="testimonios-title">Lo que dicen los equipos</h2>
+          <p>Comentarios de colaboraciones recientes.</p>
+        </div>
+        <div class="testimonial-grid">
+          <figure class="testimonial">
+            <blockquote>“Desde la primera semana vimos mejoras en velocidad y claridad del producto. La documentación que dejó nos sigue guiando.”</blockquote>
+            <figcaption>— Laura Gómez, CPO en Stratus</figcaption>
+          </figure>
+          <figure class="testimonial">
+            <blockquote>“Su capacidad para traducir insights de investigación en decisiones de diseño fue clave para el lanzamiento del MVP.”</blockquote>
+            <figcaption>— Diego Ramírez, CEO en AulaLab</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contacto" aria-labelledby="contacto-title">
+      <div class="container contact-inner">
+        <div class="contact-card">
+          <h2 id="contacto-title">Construyamos algo juntos</h2>
+          <p>¿Tienes un proyecto en mente o necesitas apoyo en tu roadmap actual? Estoy disponible para colaborar en proyectos remotos o híbridos.</p>
+          <div class="contact-actions">
+            <a class="btn primary" href="mailto:hola@agmelendez.dev" id="emailLink">hola@agmelendez.dev</a>
+            <a class="btn ghost" href="#" id="downloadCv" download="CV-agmelendez.txt">Descargar CV</a>
+          </div>
+        </div>
+        <div class="contact-details">
+          <div>
+            <h3>Perfiles</h3>
+            <ul>
+              <li><a href="https://github.com/agmelendez" target="_blank" rel="noopener">GitHub</a></li>
+              <li><a href="https://dribbble.com" target="_blank" rel="noopener">Dribbble</a></li>
+              <li><a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Disponibilidad</h3>
+            <p>Consultorías puntuales, proyectos trimestrales y workshops para equipos.</p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <small>Made with ♥ — Customize this page for your profile</small>
+      <small>© 2025 agmelendez. Diseñado y construido con cariño.</small>
     </div>
   </footer>
 
