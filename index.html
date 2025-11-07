@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>agmelendez — Profile</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img class="avatar" src="https://github.com/agmelendez.png" alt="avatar" />
+        <div>
+          <h1 id="name">agmelendez</h1>
+          <p id="title">Software Developer • Open to collaborations</p>
+        </div>
+      </div>
+      <div class="actions">
+        <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card about">
+      <h2>About</h2>
+      <p id="bio">Hello — I'm agmelendez. This is a simple profile page you can edit to show your bio, skills, projects and contact information.</p>
+      <p>
+        Quick actions:
+        <button id="copyEmail">Copy email</button>
+        <a id="downloadCv" href="#" download="CV-agmelendez.txt">Download CV</a>
+      </p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h3>Skills</h3>
+        <ul id="skills">
+          <li>JavaScript / HTML / CSS</li>
+          <li>React / Node.js</li>
+          <li>APIs & Integrations</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Projects</h3>
+        <ul id="projects">
+          <li><a href="#" target="_blank" rel="noopener">Project One — short description</a></li>
+          <li><a href="#" target="_blank" rel="noopener">Project Two — short description</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card contact">
+      <h3>Contact</h3>
+      <p>Email: <a id="emailLink" href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/agmelendez" target="_blank" rel="noopener">github.com/agmelendez</a></p>
+      <p>Twitter: <a href="#" target="_blank" rel="noopener">@yourhandle</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>Made with ♥ — Customize this page for your profile</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
